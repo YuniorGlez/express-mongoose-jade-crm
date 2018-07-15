@@ -6,8 +6,12 @@ app.use(express.json());
 
 mongoose.connect('mongodb://localhost/db-crm-jade');
 
-app.get('/', (req, res) => {
 
+const customersRouter = require('./api/customers');
+
+app.use('/api/customers', customersRouter);
+
+app.get('/', (req, res) => {
   res.send('Hola mundo')
 })
 
