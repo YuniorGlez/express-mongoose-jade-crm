@@ -1,6 +1,10 @@
 const router = require('express').Router();
-const { getAllCustomers } = require('./customers.controller');
+const { getAll, getOne, create, remove, update } = require('./customers.controller');
 
-router.get('/', getAllCustomers);
+router.get('/', getAll);
+router.post('/', create);
+router.get('/:id', getOne);
+router.delete('/:id', remove);
+router.patch('/:id', update);
 
 module.exports = router;
