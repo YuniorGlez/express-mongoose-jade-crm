@@ -39,7 +39,7 @@ function remove(req, res) {
     })
 }
 function update(req, res) {
-  CUSTOMER.findByIdAndUpdate(req.params.id, req.body)
+  CUSTOMER.findByIdAndUpdate(req.params.id, req.body, { new : true, runValidators : true})
     .then(response => {
       res.json(response);
     })
