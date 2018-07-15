@@ -1,0 +1,28 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "This project have a backend done with expressjs+mongoose and the front is served by the express-static using jade tempalte engine ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuniorGlez/express-mongoose-jade-crm.git"
+  },
+  "keywords": [
+    "jade",
+    "expressjs",
+    "mongoose",
+    "express-static",
+    "eoi-full-stack",
+    "eoi",
+    "yuniorglez"
+  ],
+  "author": "YuniorGlez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuniorGlez/express-mongoose-jade-crm/issues"
+  },
+  "homepage": "https://github.com/YuniorGlez/express-mongoose-jade-crm#readme"
+}
