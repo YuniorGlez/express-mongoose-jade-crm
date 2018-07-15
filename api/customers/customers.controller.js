@@ -5,7 +5,7 @@ module.exports = { getAll, getOne, create, remove, update };
 function getAll(req, res) {
   CUSTOMER.find()
     .then(response => {
-      res.json(response);
+      res.render('users/users', { users : response});
     })
     .catch(err => {
       res.status(500).json(err);
@@ -14,7 +14,7 @@ function getAll(req, res) {
 function getOne(req, res) {
   CUSTOMER.findById(req.params.id)
     .then(response => {
-      res.json(response);
+      res.render('users/user', { user : response});
     })
     .catch(err => {
       res.status(500).json(err);

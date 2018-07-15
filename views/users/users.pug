@@ -1,0 +1,12 @@
+extends ./../../layouts/layout.pug
+
+block content 
+  ul.users  
+    each user, i in users
+      li 
+        b Username :
+        span #{user.name}
+        br
+        b ID :
+        span 
+          a(href='/api/customers/' + user._id) #{user._id}

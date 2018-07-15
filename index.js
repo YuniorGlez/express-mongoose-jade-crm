@@ -3,19 +3,15 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/db-crm-jade');
 const app = express();
 
-
 app.use(express.json());
 
 app.set('views' , './views')
 app.set('view engine' , 'pug')
 
-
-
 // Home route
 app.get('/', (req, res) => {
   res.render('index')
 })
-
 
 const customersRouter = require('./api/customers');
 app.use('/api/customers', customersRouter);
