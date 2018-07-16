@@ -1,0 +1,12 @@
+extends ./../layouts/base.pug
+
+block content
+  h2 Se han encontrado #{users.length} usuarios
+  ul  
+    for pepito in users
+      li 
+        b Nombre : #{pepito.name}
+        br
+        img(src=pepito.img, alt="")
+        br
+        b Edad : #{pepito.age}
